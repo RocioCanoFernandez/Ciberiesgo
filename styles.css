@@ -220,6 +220,34 @@ h1, h2, h3, h4 {
   font-weight: 800;
   letter-spacing: -0.5px;
 }
+.logos-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+.seviai-logo {
+  height: 60px; /* Al ser vertical, le damos un poco más de altura */
+}
+.helvetia-logo {
+  height: 35px; /* Ajuste para el texto horizontal */
+}
+.logo-separator {
+  color: var(--color-gray-200);
+  font-size: 24px;
+  font-weight: 300;
+}
+.mb-2 { margin-bottom: 8px; }
+.footer-logo {
+  /* Filtro opcional para hacer que los logos sean blancos en el footer oscuro si es necesario,
+     aunque quizás prefieras que conserven sus colores. Prueba a comentar esto si quieres color: */
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
 
 /* Sections */
 .section {
