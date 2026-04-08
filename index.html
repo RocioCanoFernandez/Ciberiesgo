@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protege tu empresa frente a ciberataques | Seguro Ciberriesgo Helvetia</title>
+    <meta name="description" content="Seguro de ciberriesgo para PYMES que quieren proteger su negocio frente a ataques informáticos, pérdida de datos y paradas operativas.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header (Optional logo area) -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">Sevi<span class="text-red">AI</span></span>
+            </div>
+            <a href="#contacto" class="btn btn-outline btn-sm">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Sección 1 - Hero -->
+    <section class="hero hero-gradient">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <span class="badge">Seguro de Ciberriesgos</span>
+                <h1 class="hero-title">Protege tu empresa frente a <span class="text-red">ciberataques</span></h1>
+                <p class="hero-subtitle">Seguro de ciberriesgo para PYMES que quieren proteger su negocio frente a ataques informáticos, pérdida de datos y paradas operativas.</p>
+                
+                <div class="quiz-block reveal bg-white rounded-md mt-6">
+                    <h4 class="text-black text-lg mb-4">¿Tu empresa está expuesta a ciberriesgos? Compruébalo en 30 segundos:</h4>
+                    <div class="quiz-form" id="quizForm">
+                        <label class="quiz-label"><input type="checkbox" class="quiz-check"> <span>¿Tus empleados usan email corporativo?</span></label>
+                        <label class="quiz-label"><input type="checkbox" class="quiz-check"> <span>¿Guardas datos de clientes?</span></label>
+                        <label class="quiz-label"><input type="checkbox" class="quiz-check"> <span>¿Usas Microsoft 365 o Google Workspace?</span></label>
+                        <label class="quiz-label"><input type="checkbox" class="quiz-check"> <span>¿Trabajas con proveedores digitales?</span></label>
+                        <label class="quiz-label"><input type="checkbox" class="quiz-check"> <span>¿Dependes de tu ordenador para facturar?</span></label>
+                    </div>
+                    <div id="quizResult" class="quiz-result mt-4" style="display: none;">
+                        <p class="quiz-alert"><i class="ri-alert-line"></i> Si has marcado 2 o más &rarr; <strong>tu empresa ya tiene riesgo digital.</strong></p>
+                        <a href="#contacto" class="btn btn-primary w-full mt-4 shine-effect">Quiero saber cómo protegerme <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in-right">
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="shield-container">
+                            <i class="ri-shield-keyhole-line shield-icon pulse"></i>
+                        </div>
+                        <h3>Sistemas Protegidos</h3>
+                        <p>Monitorización activa y respuesta inmediata ante amenazas.</p>
+                        <div class="status-bar">
+                            <div class="status-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2 - El problema -->
+    <section class="section section-light" id="problema">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">¿Por qué tu empresa necesita protección frente a ciberriesgos?</h2>
+                <p class="section-desc">Los ciberataques ya no son solo cosa de grandes empresas.</p>
+            </div>
+            <div class="grid grid-4 cols-md-2 cols-sm-1">
+                <div class="feature-card reveal hover-lift">
+                    <div class="icon-box"><i class="ri-building-4-line"></i></div>
+                    <h3>Una PYME también es objetivo</h3>
+                    <p>Las pequeñas empresas son más vulnerables por tener menos defensas técnicas implementadas.</p>
+                </div>
+                <div class="feature-card reveal hover-lift delay-1">
+                    <div class="icon-box"><i class="ri-timer-flash-line"></i></div>
+                    <h3>Paralización del negocio</h3>
+                    <p>Un incidente puede bloquear todos tus sistemas y detener tu actividad durante días o semanas.</p>
+                </div>
+                <div class="feature-card reveal hover-lift delay-2">
+                    <div class="icon-box"><i class="ri-scales-3-line"></i></div>
+                    <h3>Costes legales y multas</h3>
+                    <p>La exposición de datos de clientes puede implicar sanciones severas de la agencia de protección de datos.</p>
+                </div>
+                <div class="feature-card reveal hover-lift delay-3">
+                    <div class="icon-box"><i class="ri-thumb-down-line"></i></div>
+                    <h3>Impacto reputacional</h3>
+                    <p>La pérdida de confianza por parte de clientes y proveedores puede ser irreparable.</p>
+                </div>
+            </div>
+            
+            <!-- Caso Real -->
+            <div class="real-story-block mt-8 reveal">
+                <div class="story-icon"><i class="ri-article-line"></i></div>
+                <div class="story-content">
+                    <h3 class="story-title">Caso real (ejemplo)</h3>
+                    <p>Una pequeña asesoría sufrió un ataque de ransomware. Perdieron acceso a facturación durante varios días y tuvieron que contratar expertos externos.</p>
+                    <p class="mt-2">El impacto no fue solo técnico: también hubo <strong>pérdida de ingresos</strong> y tiempo de gestión.</p>
+                    <p class="mt-4 text-black font-medium"><i class="ri-shield-check-line text-red"></i> Un seguro de ciberriesgo cubre este tipo de situaciones para reducir el impacto económico y ayudar a recuperar la actividad.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección 3 - Qué cubre el seguro -->
+    <section class="section section-dark" id="coberturas">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="badge badge-dark">Coberturas principales</span>
+                <h2 class="section-title text-white">Qué protege este seguro de ciberriesgo</h2>
+            </div>
+            <div class="grid grid-3 cols-sm-1">
+                <div class="cover-card reveal hover-glow">
+                    <div class="cover-icon"><i class="ri-tools-line"></i></div>
+                    <h3 class="text-white">Respuesta ante incidentes</h3>
+                    <ul class="cover-list">
+                        <li><i class="ri-check-line text-red"></i> Asistencia técnica especializada</li>
+                        <li><i class="ri-check-line text-red"></i> Gestión de crisis y del ataque</li>
+                        <li><i class="ri-check-line text-red"></i> Recuperación exprés de sistemas</li>
+                    </ul>
+                </div>
+                <div class="cover-card reveal hover-glow delay-1">
+                    <div class="cover-icon"><i class="ri-bank-card-line"></i></div>
+                    <h3 class="text-white">Protección económica</h3>
+                    <ul class="cover-list">
+                        <li><i class="ri-check-line text-red"></i> Pérdidas por interrupción del negocio</li>
+                        <li><i class="ri-check-line text-red"></i> Costes de recuperación de datos</li>
+                        <li><i class="ri-check-line text-red"></i> Cobertura ante fraude digital</li>
+                    </ul>
+                </div>
+                <div class="cover-card reveal hover-glow delay-2">
+                    <div class="cover-icon"><i class="ri-group-line"></i></div>
+                    <h3 class="text-white">Responsabilidad legal</h3>
+                    <ul class="cover-list">
+                        <li><i class="ri-check-line text-red"></i> Sanciones en Protección de Datos</li>
+                        <li><i class="ri-check-line text-red"></i> Defensa jurídica especializada</li>
+                        <li><i class="ri-check-line text-red"></i> Indemnizaciones a terceros</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="blob-mesh"></div>
+    </section>
+
+    <!-- Sección 4 - Para quién está pensado -->
+    <section class="section section-light" id="audiencia">
+        <div class="container container-narrow">
+            <div class="audience-box glass-card-solid reveal">
+                <div class="audience-content">
+                    <h2 class="section-title">Este seguro es especialmente interesante si:</h2>
+                    <ul class="checklist mt-6">
+                        <li>
+                            <div class="check-icon"><i class="ri-checkbox-circle-fill"></i></div>
+                            <span>Gestionas <strong>datos personales</strong> de clientes o empleados.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="ri-checkbox-circle-fill"></i></div>
+                            <span>Usas <strong>correo corporativo</strong> para comunicarte.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="ri-checkbox-circle-fill"></i></div>
+                            <span>Trabajas con <strong>software de facturación o ERP</strong>.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="ri-checkbox-circle-fill"></i></div>
+                            <span>Tu negocio depende de los <strong>sistemas digitales</strong> para funcionar.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="ri-checkbox-circle-fill"></i></div>
+                            <span>Tienes una web corporativa o <strong>tienda online</strong> (ecommerce).</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="audience-illustration">
+                    <i class="ri-macbook-line"></i>
+                    <div class="floating-icons">
+                        <i class="ri-database-2-line icon-1"></i>
+                        <i class="ri-global-line icon-2"></i>
+                        <i class="ri-mail-send-line icon-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 5 - Beneficios -->
+    <section class="section section-gray" id="beneficios">
+        <div class="container text-center reveal">
+            <h2 class="section-title">Qué gana tu empresa con esta protección</h2>
+            <div class="benefits-row mt-8">
+                <div class="benefit-item">
+                    <div class="benefit-circle"><i class="ri-restart-line"></i></div>
+                    <h4>Continuidad del negocio</h4>
+                </div>
+                <div class="benefit-arrow"><i class="ri-arrow-right-s-line"></i></div>
+                <div class="benefit-item">
+                    <div class="benefit-circle"><i class="ri-line-chart-down-line"></i></div>
+                    <h4>Reducción de impacto</h4>
+                </div>
+                <div class="benefit-arrow"><i class="ri-arrow-right-s-line"></i></div>
+                <div class="benefit-item">
+                    <div class="benefit-circle"><i class="ri-team-line"></i></div>
+                    <h4>Apoyo especialista</h4>
+                </div>
+                <div class="benefit-arrow"><i class="ri-arrow-right-s-line"></i></div>
+                <div class="benefit-item">
+                    <div class="benefit-circle"><i class="ri-cup-line"></i></div>
+                    <h4>Tranquilidad operativa</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 6 - CTA principal -->
+    <section class="section cta-section" id="contacto">
+        <div class="container container-narrow reveal">
+            <div class="cta-wrapper">
+                <div class="cta-text">
+                    <h2 class="text-white">¿Quieres saber si este seguro encaja contigo?</h2>
+                    <p class="text-light-gray mt-4">Pide información sin compromiso. Te asesoraremos para encontrar la protección ideal para el tamaño y sector de tu empresa.</p>
+                </div>
+                <div class="cta-form-container glass-card">
+                    <form class="contact-form" id="leadForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" placeholder="Nombre de tu empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="correo@empresa.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" placeholder="Tu número de teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje (opcional)</label>
+                            <textarea id="message" rows="3" placeholder="¿Alguna duda en particular?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full shine-effect">Solicitar información personalizada</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 7 - Más información oficial -->
+    <section class="section section-light text-center reveal">
+        <div class="container">
+            <h2 class="section-title">Más información sobre el seguro</h2>
+            <p class="section-desc max-w-2xl mx-auto mt-4">Si quieres conocer el detalle completo de coberturas, condiciones y funcionamiento del seguro, puedes consultarlo directamente en la web oficial de Helvetia.</p>
+            <a href="https://www.helvetia.es/seguros/seguro-de-ciberriesgo" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg mt-6">
+                Ver información completa del seguro <i class="ri-external-link-line"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección 7.5 - Cómo ayuda SeviAI -->
+    <section class="section section-dark text-center" id="seviai-ayuda">
+        <div class="container reveal">
+            <span class="badge badge-dark">¿Por qué estamos aquí?</span>
+            <h2 class="section-title text-white">Cómo ayuda SeviAI</h2>
+            <p class="section-desc max-w-2xl mx-auto text-light-gray mt-4">Desde SeviAI ayudamos a las empresas a evaluar herramientas sin sesgo:</p>
+            
+            <div class="grid grid-4 cols-md-2 cols-sm-1 mt-6 text-left">
+                <div class="seviai-card">
+                    <div class="seviai-icon"><i class="ri-search-eye-line"></i></div>
+                    <p>Entender sus riesgos digitales</p>
+                </div>
+                <div class="seviai-card">
+                    <div class="seviai-icon"><i class="ri-bug-line"></i></div>
+                    <p>Identificar procesos vulnerables</p>
+                </div>
+                <div class="seviai-card">
+                    <div class="seviai-icon"><i class="ri-shield-star-line"></i></div>
+                    <p>Implantar buenas prácticas</p>
+                </div>
+                <div class="seviai-card">
+                    <div class="seviai-icon"><i class="ri-link"></i></div>
+                    <p>Conectar con soluciones aseguradoras cuando tiene sentido</p>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <a href="#contacto" class="btn btn-outline border-white text-white hover-white">Habla con nosotros</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 8 - Bloque confianza -->
+    <section class="trust-block">
+        <div class="container">
+            <div class="trust-content text-center">
+                <i class="ri-information-line"></i>
+                <p>Información orientativa. Las coberturas concretas dependerán de la póliza contratada y la evaluación del riesgo realizada por <strong>Helvetia Seguros</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 9 - Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="logo-text text-white">Sevi<span class="text-red">AI</span></span>
+                <p class="mt-2 text-gray text-sm">Protegiendo el futuro digital de las PYMES.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Aviso legal</a>
+                <a href="#">Política de privacidad</a>
+                <a href="https://www.helvetia.es" target="_blank" rel="noopener noreferrer">Ir a Helvetia <i class="ri-external-link-line"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CTA Sticky (Mobile Only) -->
+    <div class="sticky-cta-mobile" id="stickyCta">
+        <a href="#contacto" class="btn btn-primary w-full">Solicitar información</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
