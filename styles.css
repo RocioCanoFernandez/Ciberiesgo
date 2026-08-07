@@ -150,6 +150,15 @@ h1, h2, h3, h4 {
 .btn-outline:hover {
   border-color: var(--color-black);
 }
+.btn-outline-red {
+  background-color: transparent;
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+.btn-outline-red:hover {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
 
 .badge {
   display: inline-block;
